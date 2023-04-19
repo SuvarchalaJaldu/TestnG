@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoSuite">
+	<listeners>
+		<listener class-name="com.demoRepeatTestNG.CustomTestListener"></listener>
+	</listeners>
+	<test thread-count="5" name="TestUserData">
+		<classes>
+			<class name="com.demoRepeatTestNG.UserServiceTest">
+				<methods>
+					<include name="deleteUserData" ></include>
+					<include name="testCreateUser" ></include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!--
+	TestUserData -->
+</suite> <!--
+DemoSuite -->
